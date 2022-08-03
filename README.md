@@ -1,2 +1,2 @@
-# smartbrain
+# Face Recognition Project
 React Project
