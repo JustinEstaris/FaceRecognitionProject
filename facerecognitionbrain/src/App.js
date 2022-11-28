@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
@@ -14,7 +14,7 @@ import Clarifai from 'clarifai';
 import './App.css';
 
 const app = new Clarifai.App({
-  apiKey: 'API-KEY-HERE'
+  apiKey: '33c0e84ee16341bbb11e8fb5e62ac793'
 });
 
 class App extends Component {
@@ -63,6 +63,8 @@ class App extends Component {
       .then(response => this.displayFaceBox(this.calculateFaceLocation(response))) // Similar to f(g(x)) - Composite Function.
       .catch(err => console.log(err));
   }
+
+
 
   render() {
     const particlesInit = async (main) => {
